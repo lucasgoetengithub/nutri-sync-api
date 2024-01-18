@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+f=gedpsp=1k=_^^+)1y0pi7)kh9@%7$d=yj07xz4a#)!e1gcz'
+SECRET_KEY = 'django-insecure-teytwcy5t8w7qhk62!!&-65#+=c_!!2m^x4$+d5^-(&_1nhi%s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +76,15 @@ WSGI_APPLICATION = 'nutri_sync_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nutri-sync-db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',  # Porta padrão do PostgreSQL
     }
 }
+
 
 
 # Password validation
