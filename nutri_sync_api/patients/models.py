@@ -11,6 +11,7 @@ class Patients(models.Model):
     address = models.CharField()
     occupation = models.CharField()
     obs = models.CharField()
+    phoneContact = models.CharField()
 
     class Meta:
         db_table = 'Patients'
