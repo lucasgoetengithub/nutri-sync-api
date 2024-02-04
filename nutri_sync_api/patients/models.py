@@ -9,9 +9,12 @@ class Patients(models.Model):
     age = models.IntegerField()
     dateOfBirth = models.DateField()
     address = models.CharField()
+    city = models.CharField()
     occupation = models.CharField()
     obs = models.CharField()
     phoneContact = models.CharField()
+    gender = models.CharField()
+    
 
     class Meta:
         db_table = 'Patients'
