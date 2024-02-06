@@ -14,6 +14,7 @@ class Patients(models.Model):
     obs = models.CharField()
     phoneContact = models.CharField()
     gender = models.CharField()
+    nutriID = models.BigIntegerField()
     
 
     class Meta:
