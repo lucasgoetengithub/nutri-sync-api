@@ -4,16 +4,15 @@ from django.contrib.auth.hashers import make_password
 class Patients(models.Model):
     username = models.CharField(max_length=150)
     name = models.CharField(max_length=150)
+    gender = models.CharField()
     email = models.CharField(unique=True)
     password = models.CharField(max_length=128)
-    age = models.IntegerField()
     dateOfBirth = models.DateField()
     address = models.CharField()
     city = models.CharField()
     occupation = models.CharField()
     obs = models.CharField()
     phoneContact = models.CharField()
-    gender = models.CharField()
     nutriID = models.BigIntegerField()
     
 
