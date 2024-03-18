@@ -17,7 +17,7 @@ class Patients(models.Model):
     
 
     class Meta:
-        db_table = 'Patients'
+        db_table = 'patients'
     
     def save(self, *args, **kwargs):
         if self.pk is None or 'password' in kwargs:
