@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Folds(models.Model):
+    patientsId = models.BigIntegerField()
+    nutriId = models.BigIntegerField()
