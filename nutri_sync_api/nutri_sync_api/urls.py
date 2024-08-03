@@ -7,4 +7,5 @@ urlpatterns = [
     path('api/', include('patients.urls')),
     path('api/', include('patientsMeasures.urls')),
     path('api/', include('bioimpedance.urls')),
+    path('api/', include('folds.urls')),
 ]

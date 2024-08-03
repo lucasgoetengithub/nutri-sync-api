@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'patients',
     'patientsMeasures',
     'bioimpedance',
+    'folds',
     'corsheaders',
 ]
 
